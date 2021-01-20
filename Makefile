@@ -1,4 +1,4 @@
-PHONY: build latest rmi build-dev build-staging build-prod push
+PHONY: build latest rmi build-dev build-staging build-prod
 
 IMAGE ?= vincentvega/simple-api
 VERSION = $(shell /bin/date "+%Y-%m-%d-%H-%M-%S")
@@ -15,5 +15,3 @@ build-prod:
 rmi:
 	docker rmi $(IMAGE):$(VERSION)
 
-push:
-	docker push $(IMAGE):$(VERSION)

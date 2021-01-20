@@ -6,7 +6,8 @@ Simple REST API for tests purposes
 
 ```bash
 make build
-make push
+docker push vincentvega/simple-api:2021-01-20-12-10-10
+docker ke push vincentvega/simple-api:dev
 ```
 
 ## Run container
